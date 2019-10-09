@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h3>JavaScript Function Closures</h3>
+
+<style>
+h3
+{
+color:skyblue;
+}
+</style>
+<p>Counting with a global variable.</p>
+
+<p id="demo"></p>
+
+<script>
+
+var counter = 0;
+
+
+function add()
+ {
+  counter += 1;
+ }
+
+
+add();
+add();
+add();
+
+
+document.getElementById("demo").innerHTML = "The counter is: " + counter;
+</script>
+
+</body>
+</html>
+
