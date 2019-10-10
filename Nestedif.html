@@ -1,0 +1,42 @@
+<html>
+<body>Nested If </body>
+
+
+
+<script>
+ 
+   document.write("<br />");
+   document.write("<br />");
+ 
+    function markgrade(mark)
+    {
+          
+      if(mark<=60&&mark>=40)
+        {
+         return "Your grade is C";
+         }
+
+       else if(mark<=75&&mark>=60)
+         {
+          return "Your grade is  B";
+         } 
+      else if(mark<=90&&mark>=75)
+        {
+          return "Your grade is A ";
+        }
+       else
+          {
+           return "Invalid Marks";    
+          }
+ 
+   }
+
+     var marks=prompt("Enter the Mark " ,0);
+     document.write(markgrade(marks));
+
+</script>
+
+
+
+
+</html>

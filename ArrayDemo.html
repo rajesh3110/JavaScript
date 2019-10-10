@@ -1,0 +1,109 @@
+<html>
+
+  <body>
+   ArrayDemo
+
+   </body>
+     <script>
+            document.write("<br />");
+            document.write("<br />");
+            var IntArray=[10,20,30,40,50,23];
+            
+            var FloatArray=[1.0,0.2,20.23,23.2];
+            
+            FloatArray[1]=3.2;
+            
+            IntArray[20]=232;
+            document.write("Integer Array: "+ IntArray);
+
+            document.write("<br />");
+            document.write("<br />");
+            document.write("Float  Array: "+ FloatArray);
+
+            document.write("<br />");
+            document.write("<br />");
+              
+            var StringArray=["Rajesh","Bhosale","Mohol","Pune"];
+            
+            document.write("String Array: "+ StringArray);
+
+             var MixArray=[1.0,"Rajesh","bhosale",23.2];
+            
+            document.write("<br />");
+            document.write("<br />");
+              
+            document.write("MixedArray: "+ MixArray);
+
+
+            document.write("<br />");
+            document.write("<br />");
+              
+            var doubleAr=[["Rajesh",11],["Bhosale",100]];
+            
+            document.write("MultiDimensional Array : "+ doubleAr);
+
+            document.write("<br />");
+            document.write("<br />");
+            
+            var array=[30,203,31,2120,230,49,302];
+
+            document.write("before push() Method "+array);
+            
+            array.push(["Rajesh","bhosale","araasdfs"]);
+            document.write("<br />");
+            document.write("<br />");
+
+            document.write("After push() Method "+array);
+
+
+            
+            array.pop(["Rajesh","bhosale","araasdfs"]);
+            document.write("<br />");
+            document.write("<br />");
+
+            document.write("After pop() Method "+array);
+            
+                  document.write("<br />");
+            document.write("<br />");
+            array.shift();
+            document.write("After the shift() : "+array)
+       
+            document.write("<br />");
+            document.write("<br />");
+            array.unshift("Rajesh");
+            document.write("After the unshift() : "+array)
+
+            document.write("<br />");
+            document.write("<br />");
+
+           var r="helo bye sorry :";
+           var r1=r.search("bye");
+           document.write(r);
+
+            document.write("<br />");
+            document.write("<br />");
+
+           document.write("After search() location of bye in Array  ="+r1);
+           document.write("<br />");
+           document.write("<br />");
+
+	   var pr=[30,20,01,210,122];
+           document.write("Array - ; "+pr);
+           document.write("<br />");
+           document.write("<br />");
+           
+
+           document.write("check whether it is Array OR not = "+Array.isArray(pr));
+           var pr1="raejsh dfasd ";
+           document.write("<br />");
+           document.write("<br />");
+           document.write("Array - ; "+pr1);
+           document.write("<br />");
+           document.write("<br />");
+           
+
+           document.write("check whether it is Array OR not = "+Array.isArray(pr1));
+1
+   
+      </script>
+</html>

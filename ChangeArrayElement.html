@@ -1,0 +1,54 @@
+<html>
+
+<body>NextInLine Demo</body>
+
+<script>
+ 
+
+   document.write("<br />");
+   document.write("<br />");
+   function addnew(array,item)
+   {
+ 
+   array.push(item);
+ 
+   return array.shift(); 
+
+   }
+   
+   var array=[10,02,302,3,102,323,45,223];
+
+   document.write("Before Insert : "+JSON.stringify(array));
+     
+   document.write("<br />");
+   document.write("<br />");
+ 
+   document.write(addnew(array,6));
+   
+
+   document.write("After Insert : "+JSON.stringify(array));
+
+
+   document.write("<br />");
+   document.write("<br />");
+
+
+var a=["Rajesh","Bharat","Bhosale"];
+
+a.push("krushikesh");
+
+
+document.write(a);
+
+   document.write("<br />");
+   document.write("<br />");
+a.shift();
+document.write(a);
+
+   document.write("<br />");
+   document.write("<br />");
+a.pop();
+document.write(a);
+</script>
+
+</html>

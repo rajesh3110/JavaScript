@@ -1,0 +1,51 @@
+<html>
+<body>Function Closure </body>
+
+<script>
+ function mfy(n)
+  {
+   var m="Outer side msg :: ";
+   document.write(m);
+   function so()
+   {
+     var ma="Inner Side MSG :";
+     document.write(ma);
+   }
+   
+  }
+
+document.write("<br />");
+mfy();
+
+
+
+
+document.write("<br />");
+document.write("<br />");
+
+
+var p="Rajesh";
+function add()
+{
+   var p="Krushikesh";
+   return p;
+}
+
+document.write(add());
+document.write("<br />");
+document.write("<br />");
+document.write(p);     
+
+
+
+
+
+
+
+
+//so();
+</script>
+
+
+
+</html>
