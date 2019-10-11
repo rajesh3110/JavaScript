@@ -1,0 +1,54 @@
+<html>
+
+<body>
+
+Call Back Demo 
+
+
+</body>
+
+
+ 
+ <script>
+
+   document.write("<br />");
+   document.write("<br />");
+
+
+  let add=function(a,b)
+      {
+        
+    return "Addtion - "+a+b;
+      }
+
+   let multi=function(a,b)
+
+   {
+   return " Multiplication-  "+a*b;
+   }
+
+  let sub=function(a,b)
+
+   {
+   return "Substraction- "+a-b;
+   }  
+ 
+  let choice=function(a,b,callback)
+    {
+    return callback(a,b); 
+    }
+
+
+
+document.write(choice(223,20,multi))
+
+	
+
+
+
+</script>
+
+
+
+
+</html>

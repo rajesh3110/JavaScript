@@ -1,0 +1,61 @@
+<html>
+
+<body> Call Back Function Demo 
+
+<h4>  Enter "Add" for Addition  </h4>
+ <h4>  Enter "Sub" for Addition  </h4>
+
+ <h4>  Enter "Multi" for Addition  </h4>
+            </body>
+<style>
+   h4
+    {
+    color:red;
+    
+    }
+</style>
+
+
+<script>
+
+     document.write("<br />");
+     document.write("<br />");
+     
+function multi(a,b,choice)
+ {
+           
+  if(choice=="Add")
+    
+        return "Addition Of number is = "+(a+b);
+  
+  else if(choice=="Sub")
+  
+       return  "Subtraction Of number is = "+(a-b);
+  
+  else if (choice=="Multi")
+    
+   return "Multiplication Of number is = "+(a*b);
+    
+   else 
+        return "OPPps ";          
+ }
+ 
+
+
+//var a=prompt("Enter first number :");
+//var b=prompt("Enter Second number : ");
+
+var choice=prompt("Enter Choice ");
+
+
+             
+document.write(multi(3,4,choice));
+
+</script>
+
+
+
+
+
+
+</html>

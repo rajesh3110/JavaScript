@@ -1,0 +1,78 @@
+<html>
+  <body> Switch Demo </body>
+
+
+  <script>
+   
+     function switchd(choice)
+       {
+         var strin1=" ";
+        
+       switch(choice)
+          {
+               case "prime":
+                       var p=0;    
+                       var n=prompt("Enter nubmer :: ");
+                       for(var i=2;i<=n/2;i++)
+                          {
+                              if(n%i==0)
+                                 p=1;
+                                 break;
+                          }
+                      if(p==0)
+                          {
+                            document.write("<br/>");
+                            document.write("<br/>");
+                            strin1=  "Prime number : "  
+                            return strin1;
+                          }
+                     else 
+                          {
+                            document.write("<br/>");
+                            document.write("<br/>"); 
+                             strin1=  "not Prime number : "  
+                            return strin1;
+                         }
+                     break;
+            case "fibo" :
+                     var n=prompt("Enter num : ");
+                     var a=0;
+                     var b=1;
+                     var c=1;
+                      
+                      document.write("<br/>");
+                      document.write("<br/>");
+                      document.write("fibo series = "); 
+                      document.write(a+" "+b);
+                     for(var i=1;i<=n;i++)
+                       {
+                              c=a+b;
+                              a=b;
+                              b=c;
+                        }
+
+                     
+                       strin1=c;
+                       return strin1;
+                      break;
+
+           default:
+                       document.write("<br/>");
+                       document.write("<br/>");
+                       strin1="Invalid";
+                       return strin1;
+                 }     
+
+
+       }
+       
+   document.write("1 . Enter fibo ");
+   document.write("2 . Enter prime ");
+   
+   var choice=prompt("Enter the your choice : ");
+   document.write(switchd(choice));    
+
+  </script>
+
+
+</html>
