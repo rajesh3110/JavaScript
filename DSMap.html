@@ -1,0 +1,76 @@
+ 
+<html>
+
+  <body>
+    Map Demo  
+  </body>
+
+ <script>
+
+
+  document.write("<br />");
+   
+   document.write("<br />");
+    
+   let map=new Map();
+
+  map.set(1,"Rajesh");
+
+   map.set(23,"Sandesh");
+
+   map.set(2,"Mahesh");
+
+ 
+   map.set(29,"Rajesh");
+
+    
+   document.write("Using  get "+ map.get(2));
+
+   document.write("<br />");
+   
+   document.write("<br />");
+    
+  document.write("Size of Map "+ map.size);
+
+
+   document.write("<br />");
+   
+   document.write("<br />");
+    
+ document.write("Map.has() with Map contains the value =  "+ map.has(29));
+
+
+
+   document.write("<br />");
+   
+   document.write("<br />");
+
+   document.write("Map.has()  Map does not contains value ="+ map.has(2229));
+
+   
+   document.write("<br />");
+  document.write("<br />");
+ document.write("Before Delete ::");
+    
+
+  for(let r of map.keys())
+   {
+     document.write(r);
+   }
+        
+   document.write("<br />");
+     document.write("<br />");
+   document.write("delete 29 "+ map.delete(29));
+
+
+    document.write("<br />");
+     document.write("<br />");
+ document.write("After Delete : ");
+    for(let r of map.keys())
+   {
+     document.write(r);
+   }
+
+ </script>
+
+</html>

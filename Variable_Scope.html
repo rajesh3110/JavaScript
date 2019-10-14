@@ -1,0 +1,32 @@
+<html>
+
+ <body> Variable Scope :: </body>
+
+
+
+
+<script>
+
+    document.write("<br/>");
+    document.write("<br/>");
+   
+let globalLet = "This is a global variable"; 
+   
+   
+function fun()
+   { 
+ 
+  let localLet = "This is a local variable"; 
+   
+ document.write(globalLet);
+  document.write("<br/>");
+    document.write("<br/>"); // This is a global variable 
+document.write(localLet); // This is a local variable 
+
+   } 
+fun(); 
+
+</script>
+
+
+</html>

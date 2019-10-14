@@ -1,0 +1,26 @@
+<html>
+
+ <body> </body>
+
+
+
+
+<script>
+
+    document.write("<br/>");
+    document.write("<br/>");
+   
+function x()
+ {
+        document.write("From X funcion body :: ");     
+ }
+function y(callback)
+ {
+  document.write("From Y funcion body :: ");
+  callback();
+ }
+document.write(y(x));
+</script>
+
+
+</html>

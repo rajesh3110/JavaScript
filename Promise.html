@@ -1,0 +1,60 @@
+<html>
+
+
+<body>
+
+ Promise
+  
+
+  Demo 
+ </body>
+
+ <h3>Pls help to find out the room is clean or not : </h3>
+
+  
+ <h2> </h2> 
+
+
+ <script>
+
+    document.write("<br />");
+   
+    document.write("<br />");
+   
+
+   let ToCleanToRoom=new Promise(function(resolve,reject)
+    {
+    var clean=false;
+    
+   if(clean)
+  
+    resolve("Room is Clean :");
+
+  else
+  
+    reject("Room is not Clean ");
+
+    
+        
+
+
+   });
+
+
+   ToCleanToRoom.then(function(fromResolve)
+   {
+     document.write(" "+fromResolve);   
+   }).catch(function(fromReject)
+      {
+
+   document.write(" "+fromReject);
+
+   });
+
+
+
+
+ </script>
+
+
+</html>

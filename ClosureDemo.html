@@ -1,0 +1,76 @@
+<html>
+<body>Closure Demo :: </body>
+<script>
+
+
+
+    document.write("<br />");
+   document.write("<br />");   
+  function foo()
+   {
+     var b=1000;
+     function inner()
+     {
+
+          return b;
+     }
+   
+   document.write("<br />");
+   document.write("<br />");
+    return inner;
+   }
+
+
+   var get_funtion=foo();
+
+  document.write(get_funtion());
+  
+  document.write(get_funtion());
+
+
+
+
+
+ function outer(outer_agr)
+  {
+        function inner(inner_agr) 
+         {  
+             
+             document.write("Outer Value is = "+outer_agr);
+                    document.write("<br />");
+              document.write("<br />");
+             document.write("Inner Value is = "+inner_agr);
+                  document.write("<br />");
+              document.write("<br />");
+             return "Addition Of Outer Value and  Inner Value = "+( outer_agr+inner_agr);
+         }
+
+         return inner;
+  }
+       document.write("<br />");
+   document.write("<br />");
+     var function1=outer(5);
+   document.write(function1(4));
+    document.write("<br />");
+   document.write("<br />");
+   document.write(function1(3));
+
+
+             
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

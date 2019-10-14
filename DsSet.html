@@ -1,0 +1,100 @@
+ 
+<html>
+
+  <body>
+    Map Demo  
+  </body>
+
+ <script>
+
+
+  document.write("<br />");
+   
+   document.write("<br />");
+    
+   let setd=new Set();
+
+
+ let rajesh="Rajesh";
+ let sandesh="Sandesh";
+ let mahesh="Mahesh";
+ let akash="Akash";
+  
+
+  setd.add(rajesh);
+
+   setd.add(sandesh);
+
+   setd.add(mahesh);
+
+ 
+   setd.add(akash);
+  
+  document.write("Element in Set \n");
+  
+  document.write("<br />");
+   
+   document.write("<br />");
+
+ for(let i of setd)
+  {
+   document.write(" \n"+i); 
+   }
+    
+  document.write("<br />");
+   
+   document.write("<br />");
+
+  document.write("Size of Set:  "+ setd.size);
+
+   document.write("<br />");
+   
+   document.write("<br />");
+    
+ document.write("set.has() with contains the value =  "+ setd.has("Rajesh"));
+
+
+
+   document.write("<br />");
+   
+   document.write("<br />");
+
+   document.write("set.has() does not contains value ="+ setd.has("Rasfasd"));
+
+document.write("<br />");
+   
+   document.write("<br />");
+
+
+ document.write("before Delete : ");
+
+    for(let i of setd)
+  {
+   document.write(" \n"+i); 
+   }
+    
+  
+        
+   document.write("<br />");
+   document.write("<br />");
+   document.write("Delete Rajesh: "+ setd.delete("Rajesh"));
+
+
+    document.write("<br />");
+     document.write("<br />");
+ document.write("After Delete : ");
+    for(let r of setd)
+   {
+     document.write(" \n "+r);
+   }
+
+setd.clear()
+
+
+    document.write("<br />");
+     document.write("<br />");
+
+  document.write("After the Clear the set size is :  "+ setd.size);
+ </script>
+
+</html>

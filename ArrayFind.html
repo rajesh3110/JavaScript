@@ -1,0 +1,50 @@
+
+
+
+<html>
+<body>
+
+ArrayFind Demo 
+
+</body>
+  
+
+   <script>
+   document.write("<br />");
+   document.write("<br />");
+  
+   var array=[10,22,23,24,25,30];
+  
+   var Elementfound=array.find(function(element)
+
+   {
+   return element>18;  
+   }
+   )
+  ;
+ document.write("<br />");
+   document.write("<br />");
+  
+   document.write("Index OF 3 element  is =  "+ array[3]);
+
+   document.write("<br />");
+   document.write("<br />");
+  
+   document.write("Element Array.find()    "+Elementfound);
+  
+   document.write("<br />");
+   document.write("<br />");
+
+   var indexfound=array.find(function(index)
+    {
+
+     return index>3;
+    }
+    );
+     document.write("index Array.find()"+indexfound);
+
+  
+   </script>
+
+
+</html>

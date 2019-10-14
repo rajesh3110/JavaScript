@@ -1,0 +1,54 @@
+<html>
+
+
+<body>
+
+ Promise
+  
+
+  Demo 
+ </body>
+
+
+
+ <script>
+
+    document.write("<br />");
+   
+    document.write("<br />");
+   
+
+
+   let TocheckMark=new Promise(function(accept,reject)
+   {
+
+   
+    let marks=prompt("Enter the marks ");
+  
+      if(marks>=40 && marks<=100)
+   
+      accept("Your Pass the Exam");    
+     
+      else
+      
+         reject("Sorry Ur Fail in Exam Try next Time :: ");
+
+     
+   
+   
+  
+    });
+
+
+    TocheckMark.then(function(pass)
+    {
+      document.write(" "+ pass);
+     }).catch(function(notpass)
+        {
+             document.write(" "+ notpass);
+        });
+
+ </script>
+
+
+</html>
