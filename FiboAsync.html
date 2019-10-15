@@ -1,0 +1,67 @@
+<html>
+
+ <body>
+
+
+  Async Demo 
+
+
+  
+  </body>
+
+
+ <script>
+
+   document.write("<br />");
+
+   document.write("<br />");
+
+    const asydemo = async () =>
+    {
+       var a=0; 
+       var b=1;
+       var c=1;
+       var n=5;
+
+      document.write("Fibo Series : ");
+       document.write(a+" "+b);
+       for(var i=2;i<=n;i++)
+        {
+          c=a+b;
+          a=b;
+          b=c;
+        document.write(" "+c);
+    
+       }
+    }
+
+  var asy=async() =>
+   {
+
+   var r="Rajesh";
+    return r;       
+
+   return fr;
+   }
+
+
+
+     asydemo().then(data=> document.write(data));
+ 
+ 
+     document.write("<br />");
+
+     document.write("<br />");
+
+     asy().then(r=>document.write(r));
+  
+
+
+
+
+
+
+ </script>
+
+
+</html>

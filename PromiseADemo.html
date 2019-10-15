@@ -1,0 +1,48 @@
+<html>
+
+<script>
+
+  var calldemo=new Promise(function(reject,solve,pending)
+   {
+
+
+    var tr=prompt("Enter Option :");
+    if(tr=="1")
+    {	
+     reject("Done ");
+    }
+
+   else if(tr=="2")
+
+    {
+     reject("Error");
+    }
+
+  else
+     {
+      pending("Pending");
+       }      
+  
+    
+   });
+
+
+   calldemo.then(function(pass)
+   
+  {
+   
+   document.write(pass)
+
+  }).catch(function(error)
+    {
+     
+     document.write(pass)
+    }).
+    catch(function(pend)
+    {
+    document.write(pend)
+    });
+ </script>
+
+
+</html>
