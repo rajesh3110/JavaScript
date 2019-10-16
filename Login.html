@@ -1,0 +1,43 @@
+<html>
+    
+<h1>Login Form </h1>
+<form onsubmit="return val()">
+
+    
+    username:<input type="text" id="uname",value=""><br /><br />
+
+    password:<input type="password" id="pwd",value=""><br /><br />
+    
+
+    <input type="submit" name="button" value="Submit"><hr />
+
+</form>
+
+<script>
+
+function val()
+{
+    var uname=document.getElementById("uname").value;
+    var pwd=document.getElementById("pwd").value;
+
+    if(uname==""||pwd=="")
+    {
+    
+        alert("Both field cant be null");
+        return;
+    }
+    else
+    {
+        document.write("Welcome TO Page :");
+    }
+    
+
+
+
+    
+}
+
+</script>
+
+
+</html>
